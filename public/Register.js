@@ -80,7 +80,7 @@ registerForm.addEventListener(
 
                 registerForm.reset();
                 alert("Data registered")
-window.location.href("index.html")
+window.location.href="index.html"
             }
 
             else {
