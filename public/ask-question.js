@@ -68,7 +68,7 @@ if (!userData) {
             try {
 
                 const response = await fetch(
-                    "/api/questions",
+                    "https://careercoach-oyy5.onrender.com/api/questions",
                     {
                         method: "POST",
 

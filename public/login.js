@@ -23,7 +23,7 @@ loginForm.addEventListener(
         try {
 
             const response = await fetch(
-                "/api/login",
+                "https://careercoach-oyy5.onrender.com/api/login",
                 {
                     method: "POST",
 

@@ -36,7 +36,7 @@ registerForm.addEventListener(
         try {
 
             const response = await fetch(
-                "/api/register",
+                "https://careercoach-oyy5.onrender.com/api/register",
                 {
 
                     method: "POST",
@@ -79,6 +79,7 @@ registerForm.addEventListener(
                     data.message;
 
                 registerForm.reset();
+                alert("Data registered")
 
             }
 
