@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.6",
+    "dns": "^0.2.2",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongodb": "^7.6.0",
+    "mongoose": "^9.9.4",
+    "mysql2": "^3.24.3",
+    "node": "^26.8.1"
+  },
+  "name": "careercoach_js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "Home.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "",
+  "license": "ISC"
+}

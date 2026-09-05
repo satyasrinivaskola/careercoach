@@ -1,0 +1,265 @@
+/* ================================ */
+/* GLOBAL */
+/* ================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6f9;
+    color: #1f2937;
+}
+
+
+/* ================================ */
+/* HEADER */
+/* ================================ */
+
+header {
+    height: 70px;
+    padding: 0 40px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background: #12355b;
+    color: white;
+
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav button {
+    border: none;
+    padding: 9px 16px;
+    border-radius: 8px;
+
+    background: white;
+    color: #12355b;
+
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* ================================ */
+/* MAIN */
+/* ================================ */
+
+main {
+    width: 100%;
+    max-width: 700px;
+
+    margin: 45px auto;
+    padding: 0 20px;
+}
+
+main h2 {
+    text-align: center;
+    margin-bottom: 25px;
+
+    font-size: 26px;
+    color: #12355b;
+}
+
+
+/* ================================ */
+/* MESSAGE */
+/* ================================ */
+
+#message {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+
+/* ================================ */
+/* PROFILE CARD */
+/* ================================ */
+
+.profile-container {
+    background: white;
+
+    width: 100%;
+
+    padding: 30px;
+
+    border: 1px solid #e1e5ea;
+
+    border-radius: 14px;
+
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ================================ */
+/* FORM */
+/* ================================ */
+
+#profileForm {
+    display: flex;
+    flex-direction: column;
+
+    gap: 16px;
+}
+
+
+/* ================================ */
+/* FORM GROUP */
+/* ================================ */
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+
+    gap: 6px;
+}
+
+.form-group label {
+    font-size: 14px;
+    font-weight: 600;
+
+    color: #374151;
+}
+
+
+/* ================================ */
+/* INPUTS */
+/* ================================ */
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+
+    padding: 11px 12px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    outline: none;
+
+    background: white;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #12355b;
+
+    box-shadow:
+        0 0 0 2px rgba(18, 53, 91, 0.1);
+}
+
+.form-group textarea {
+    min-height: 90px;
+
+    resize: vertical;
+}
+
+
+/* ================================ */
+/* READ ONLY */
+/* ================================ */
+
+.form-group input[readonly] {
+    background: #f3f4f6;
+
+    color: #6b7280;
+
+    cursor: not-allowed;
+}
+
+
+/* ================================ */
+/* SAVE BUTTON */
+/* ================================ */
+
+#saveBtn {
+    width: 150px;
+
+    margin: 10px auto 0;
+
+    padding: 11px 20px;
+
+    border: none;
+
+    border-radius: 8px;
+
+    background: #12355b;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+}
+
+#saveBtn:hover {
+    background: #0d2947;
+}
+
+
+/* ================================ */
+/* MOBILE */
+/* ================================ */
+
+@media (max-width: 700px) {
+
+    header {
+        height: auto;
+
+        padding: 15px 20px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 15px;
+    }
+
+    nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    main {
+        margin: 30px auto;
+        padding: 0 15px;
+    }
+
+    .profile-container {
+        padding: 20px;
+        border-radius: 12px;
+    }
+
+    main h2 {
+        font-size: 23px;
+    }
+
+    #saveBtn {
+        width: 100%;
+    }
+}

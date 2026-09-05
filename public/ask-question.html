@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Ask Question - CareerCoach</title>
+
+    <link rel="stylesheet"
+          href="ask-question.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>CareerCoach</h1>
+
+    <nav>
+
+        <a href="/student-dashboard.html">
+            Dashboard
+        </a>
+
+        <a href="/student-profile.html">
+            My Profile
+        </a>
+
+        <a href="/ask-question.html">
+            Ask Question
+        </a>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <div class="question-container">
+
+        <h2>Ask a Career Question</h2>
+
+        <p class="description">
+            Ask your career-related question and
+            our team will provide guidance.
+        </p>
+
+
+        <form id="questionForm">
+
+            <label for="question">
+                Your Question
+            </label>
+
+            <textarea
+                id="question"
+                name="question"
+                rows="8"
+                placeholder="Enter your career question..."
+                required>
+            </textarea>
+
+
+            <button type="submit"
+                    id="submitBtn">
+                Submit Question
+            </button>
+
+
+            <p id="message"></p>
+
+        </form>
+
+    </div>
+
+</main>
+
+
+<script src="ask-question.js"></script>
+
+</body>
+
+</html>

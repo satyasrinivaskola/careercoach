@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Profile - CareerCoach</title>
+
+    <link rel="stylesheet"
+          href="student-profile.css">
+</head>
+<main>
+
+    <h2>My Profile</h2>
+
+    <div id="message"></div>
+
+    <div class="profile-container">
+
+        <form id="profileForm">
+
+            <div class="form-group">
+                <label>Name</label>
+                <input type="text" id="name" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>Email</label>
+                <input type="email" id="email" readonly>
+            </div>
+
+            <div class="form-group">
+                <label>Phone</label>
+                <input type="text" id="phone">
+            </div>
+
+            <div class="form-group">
+                <label>Qualification</label>
+                <input type="text" id="qualification">
+            </div>
+
+            <div class="form-group">
+                <label>Specialization</label>
+                <input type="text" id="specialization">
+            </div>
+
+            <div class="form-group">
+                <label>College</label>
+                <input type="text" id="college">
+            </div>
+
+            <div class="form-group">
+                <label>Passing Year</label>
+                <input type="number" id="passing_year">
+            </div>
+
+            <div class="form-group">
+                <label>Skills</label>
+                <textarea id="skills"></textarea>
+            </div>
+
+            <button type="submit" id="saveBtn">
+                Save Profile
+            </button>
+
+        </form>
+
+    </div>
+
+</main>
+<script src="student-profile.js"></script>

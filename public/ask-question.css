@@ -1,0 +1,206 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+
+header {
+    background-color: #1e3a5f;
+    color: white;
+
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+header h1 {
+    font-size: 24px;
+}
+
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+#logoutBtn {
+    background-color: #dc3545;
+
+    color: white;
+
+    border: none;
+
+    padding: 9px 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+#logoutBtn:hover {
+    background-color: #c82333;
+}
+
+
+main {
+    max-width: 800px;
+
+    margin: 50px auto;
+
+    padding: 20px;
+}
+
+
+.question-container {
+    background-color: white;
+
+    padding: 35px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+.question-container h2 {
+    color: #1e3a5f;
+
+    margin-bottom: 10px;
+}
+
+
+.description {
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+form {
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+label {
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+
+textarea {
+    width: 100%;
+
+    padding: 12px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 6px;
+
+    font-size: 15px;
+
+    font-family: Arial, sans-serif;
+
+    resize: vertical;
+
+    margin-bottom: 20px;
+}
+
+
+textarea:focus {
+    outline: none;
+
+    border-color: #1e3a5f;
+}
+
+
+#submitBtn {
+    background-color: #1e3a5f;
+
+    color: white;
+
+    border: none;
+
+    padding: 12px 20px;
+
+    border-radius: 6px;
+
+    cursor: pointer;
+
+    font-size: 15px;
+}
+
+
+#submitBtn:hover {
+    background-color: #162d49;
+}
+
+
+#message {
+    margin-top: 15px;
+
+    font-weight: bold;
+}
+
+
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+
+        justify-content: center;
+    }
+
+
+    main {
+        margin: 20px auto;
+
+        padding: 15px;
+    }
+
+
+    .question-container {
+        padding: 25px;
+    }
+
+}

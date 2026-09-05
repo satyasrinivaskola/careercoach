@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Student Details - CareerCoach</title>
+
+    <link rel="stylesheet"
+          href="student-details.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>CareerCoach</h1>
+
+    <nav>
+
+        <a href="/admin-dashboard.html">
+            Dashboard
+        </a>
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+    </nav>
+
+</header>
+
+
+<main>
+
+    <h2>Student Details</h2>
+
+    <div id="message"></div>
+
+
+    <!-- Student Profile -->
+
+    <section class="profile-section">
+
+        <h3>Student Profile</h3>
+
+        <div class="profile-grid">
+
+            <div>
+                <strong>Name</strong>
+                <p id="studentName">-</p>
+            </div>
+
+            <div>
+                <strong>Email</strong>
+                <p id="studentEmail">-</p>
+            </div>
+
+            <div>
+                <strong>Phone</strong>
+                <p id="studentPhone">-</p>
+            </div>
+
+            <div>
+                <strong>Qualification</strong>
+                <p id="studentQualification">-</p>
+            </div>
+
+            <div>
+                <strong>Specialization</strong>
+                <p id="studentSpecialization">-</p>
+            </div>
+
+            <div>
+                <strong>College</strong>
+                <p id="studentCollege">-</p>
+            </div>
+
+            <div>
+                <strong>Passing Year</strong>
+                <p id="studentPassingYear">-</p>
+            </div>
+
+            <div>
+                <strong>Skills</strong>
+                <p id="studentSkills">-</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- All Questions -->
+
+    <section class="questions-section">
+
+        <h3>All Questions</h3>
+
+        <div id="questionsList">
+
+            <p>Loading questions...</p>
+
+        </div>
+
+    </section>
+
+</main>
+
+
+<script src="student-details.js"></script>
+
+</body>
+
+</html>

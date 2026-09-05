@@ -1,0 +1,192 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #333;
+}
+
+
+/* Header */
+header {
+    background-color: #1e3a5f;
+    color: white;
+    padding: 18px 40px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Logo */
+header h1 {
+    font-size: 24px;
+}
+
+
+/* Navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+button{
+  
+     display: inline-block;
+
+    background-color: #1e3a5f;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 5px;}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* Logout button */
+#logoutBtn {
+    background-color: #dc3545;
+    color: white;
+
+    border: none;
+    padding: 9px 16px;
+
+    border-radius: 5px;
+
+    cursor: pointer;
+}
+
+
+#logoutBtn:hover {
+    background-color: #c82333;
+}
+
+
+/* Main */
+main {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+
+main h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+
+/* Welcome message */
+#welcomeMessage {
+    text-align: center;
+    color: #555;
+    margin-bottom: 35px;
+}
+
+
+/* Dashboard cards */
+.dashboard-container {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 25px;
+}
+
+
+/* Card */
+.dashboard-card {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    box-shadow:
+        0 3px 10px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+}
+
+
+.dashboard-card h3 {
+    margin-bottom: 15px;
+
+    color: #1e3a5f;
+}
+
+
+.dashboard-card p {
+    color: #666;
+
+    line-height: 1.6;
+
+    margin-bottom: 20px;
+}
+
+
+/* Card links */
+.dashboard-card a {
+    display: inline-block;
+
+    background-color: #1e3a5f;
+
+    color: white;
+
+    text-decoration: none;
+
+    padding: 10px 18px;
+
+    border-radius: 5px;
+}
+
+
+.dashboard-card a:hover {
+    background-color: #162c46;
+}
+
+
+/* Responsive */
+@media (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+
+        padding: 20px;
+    }
+
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+
+    .dashboard-container {
+        grid-template-columns: 1fr;
+    }
+
+}
