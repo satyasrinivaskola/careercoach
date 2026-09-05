@@ -1,7 +1,7 @@
 const registerForm =
     document.getElementById("registerForm")
 
-alert("Hello satya")
+// alert("Hello satya")
 
 
 
@@ -80,7 +80,7 @@ registerForm.addEventListener(
 
                 registerForm.reset();
                 alert("Data registered")
-
+window.location.href("index.html")
             }
 
             else {
