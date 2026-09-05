@@ -1,8 +1,8 @@
 const registerForm =
-    document.getElementById("registerForm");
+    document.getElementById("registerForm")
 
+alert("Hello satya")
 
-alert("Hello");
 
 
 registerForm.addEventListener(
